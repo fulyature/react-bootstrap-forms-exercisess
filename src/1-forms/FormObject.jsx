@@ -31,6 +31,7 @@ const FormObject = () => {
     // console.log(e.target.name)
     // console.log(e.target.id)
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
   return (
@@ -48,7 +49,7 @@ const FormObject = () => {
             aria-describedby="emailHelp"
             //? OnChange event'ı input degeri her degistiginde tetiklenir. Biz de yazdıgımız event handler araciligi ile State'i guncelleyebilmis oluruz.
             onChange={handleFormData}
-            //?tek bir statemiz old. için 3 inputa da onChangede aynı fks yi (handleFormData yı) cağırırız.
+            //?tek bir statemiz old. için 3 inputa da onChangede aynı fks yi (handleFormData yı) cağırırız. ama bi objeyi parcalı guncellemelıyız. cunku farklı ınputlardan değerler geliyor.
             value={username}
             name="username"
           />
