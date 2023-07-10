@@ -11,6 +11,19 @@ const KeyboardClipboard = () => {
     }
   };
 
+  const handlePaste = (e) => {
+    e.target.className = "form-control border border-danger border-4";
+    // e.target.style.border = "3px solid red"
+  };
+
+  const handleCopy = (e) => {
+    alert("you are not allowed to copy");
+    e.preventDefault();
+  };
+  const handleCut = (e) => {
+    alert("you are not allowed to cut");
+    e.preventDefault();
+  };
   return (
     <div className="container">
       <h2 className="text-center">KeyboardClipboard</h2>
@@ -26,8 +39,19 @@ const KeyboardClipboard = () => {
       />
       <div className="mt-4">
         <h3>Copied Content</h3>
-        <p>{content.toLocaleLowerCase()}</p>
+        <p onCopy={handleCopy} onCut={handleCut}>
+          {content.toLocaleLowerCase()}
+        </p>
       </div>
+
+      <textarea
+        className="form-control"
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        onPaste={handlePaste}
+      ></textarea>
     </div>
   );
 };
