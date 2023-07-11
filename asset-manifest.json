@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-bootstrap-forms-exercises/static/css/main.4da62354.css",
-    "main.js": "/react-bootstrap-forms-exercises/static/js/main.0f4b08b8.js",
+    "main.js": "/react-bootstrap-forms-exercises/static/js/main.31041ed5.js",
     "index.html": "/react-bootstrap-forms-exercises/index.html",
     "main.4da62354.css.map": "/react-bootstrap-forms-exercises/static/css/main.4da62354.css.map",
-    "main.0f4b08b8.js.map": "/react-bootstrap-forms-exercises/static/js/main.0f4b08b8.js.map"
+    "main.31041ed5.js.map": "/react-bootstrap-forms-exercises/static/js/main.31041ed5.js.map"
   },
   "entrypoints": [
     "static/css/main.4da62354.css",
-    "static/js/main.0f4b08b8.js"
+    "static/js/main.31041ed5.js"
   ]
 }
