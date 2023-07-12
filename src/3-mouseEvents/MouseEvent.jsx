@@ -34,11 +34,11 @@ const MouseEvent = () => {
       {visible && <div>Hint</div>}
 
       <div
-        id="todo-3"
+        id="todo-2"
         className=" bg-warning rounded text-light w-50 p-4 my-4"
         onMouseMove={handleMove}
       >
-        todo item 3
+        todo item 2
       </div>
 
       <p>
